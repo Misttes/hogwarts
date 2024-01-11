@@ -1,0 +1,329 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #0d0d0d;
+  color: #fff;
+  padding: 20px; 
+  text-align: center; 
+}
+
+header h1 {
+  font-size: 1.5rem; 
+  text-align: center; 
+  text-transform: uppercase;
+  letter-spacing: 3px; 
+  margin: 20px 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.hat{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hat img{
+  margin: 20px;
+  width: 15.5em;
+  height: 17.5em;
+  border-radius: 50%;
+  border: 0 solid #bebebea9;
+  box-shadow: 10px 10px 50px #888080cc, 0 0 50px hsla(0, 0%, 0%, 0.685), 0 0 30px rgba(255, 255, 255, 0.459);
+}
+
+.formulario{
+  margin: 20px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#questions-cards{
+  text-align: center;
+  
+}
+
+.questions{
+  width: 70%;
+  margin: 2.5em auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0.5px 0.5px 2.5px rgb(255, 255, 255);
+  background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/img/Azkaban.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: none;
+}
+
+.questions p{
+  margin: 2.5em auto;
+}
+
+.btn-select{
+  width: 4.5em;
+  margin-right: 10px;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 0;
+  background-color: hsla(0, 0%, 86%, 0.863);
+  color: #181818;
+}
+
+.btn-select:hover{
+  background-color: #0d0d0d;
+  text-shadow: 0.5px 0.5px 2.5px rgb(255, 255, 255);
+  color: white;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.btn-select:active{
+  background-color: hsla(0, 0%, 0%, 0.877);
+}
+
+.btn-selectNO{
+  width: 4.5em;
+  margin-right: 10px;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 0;
+  background-color: hsla(0, 0%, 86%, 0.863);
+  color: #181818;
+}
+
+.btn-selectNO:hover{
+  background-color: #0d0d0d;
+  text-shadow: 0.5px 0.5px 2.5px rgb(255, 255, 255);
+  color: white;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.btn-selectNO:active{
+  background-color: hsla(0, 0%, 0%, 0.877);
+}
+
+
+.btn-center{
+  display: none;
+  text-align: center;
+  margin: 10em auto;
+}
+
+.Send{
+  padding: 40px 25px; 
+  font-size: 16px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 50px #888080cc, 0 0 50px hsla(0, 0%, 0%, 0.685), 0 0 30px rgba(255, 255, 255, 0.459);
+}
+
+.Send:hover{
+  background-color: hsl(0, 0%, 0%);
+  color: white;
+  text-shadow: 0.5px 0.5px 2.5px rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.mago{
+  text-align: center;
+  margin: 5em;
+}
+
+.animals{
+  text-align: center;
+  margin: 5em;
+}
+
+.animals p{
+  display: none;
+  margin: 2.5em 12em;
+}
+
+.animals img{
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+  margin: 10px;
+  box-shadow: 10px 10px 50px #888080cc, 0 0 50px hsla(0, 0%, 0%, 0.685), 0 0 30px rgba(255, 255, 255, 0.459);
+}
+
+.houses{
+  text-align: center;
+}
+
+.houses p{
+  display: none;
+  margin: 2.5em 12em;  
+}
+
+.houses img{
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+  margin: 10px;
+  box-shadow: 10px 10px 50px #888080cc, 0 0 50px hsla(0, 0%, 0%, 0.685), 0 0 30px rgba(255, 255, 255, 0.459);
+}
+
+.patronus-select{
+  text-align: center;
+  width: 70%;
+  margin: 10em auto;
+}
+
+.patronus-select h2{
+  margin: 25px;
+}
+
+.btn-patronus{
+  margin: 33px;
+  padding: 40px 25px; 
+  font-size: 16px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 50px hsla(187, 89%, 59%, 0.8), 0 0 50px hsla(0, 0%, 0%, 0.685), 0 0 30px rgba(255, 255, 255, 0.459);
+}
+
+.btn-patronus:hover{
+  background-color: hsl(0, 0%, 0%);
+  color: white;
+  text-shadow: 0.5px 0.5px 2.5px rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+footer {
+  background-color: hsl(0, 0%, 0%); 
+  color: #fff; 
+  padding: 20px; 
+  margin-top: 25px;
+  text-align: center; 
+}
+
+.Mago h2{
+  text-align: center;
+  margin: 2.5em;
+}
+
+/*Todo Boton Send
+
+
+
+/*Todo CASAS */
+
+#Gryffindor{
+  display: none;
+}
+  
+#Hufflepuff{
+  display: none;
+}
+
+#Ravenclaw{
+  display: none;
+}
+
+#Slytherin{
+  display: none;
+}
+
+/*Todo Animals */
+
+.patronus-select{
+  display: none;
+}
+
+#Ciervo{
+  display: none;
+}
+  
+#Wolf{
+  display: none;
+}
+
+#Lion{
+  display: none;
+}
+
+#Phoenix{
+  display: none;
+}
+
+@media (min-width: 1080px){
+
+.hat{
+  margin: 5em;
+}
+
+.back-one{
+  background-image: url("/img/fondo/fonod5.jpeg");
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position:left;
+}
+
+#questions-cards{
+  display: flex;
+  margin: 10em;
+}
+
+.questions{
+  padding: 5em;
+}
+
+.questions p{
+  font-size: large;
+}
+
+.animals p {
+  display: block;
+  margin: 2.5em 12em;
+}
+
+.houses p {
+  display: block;
+  margin: 2.5em 12em;  
+}
+
+}

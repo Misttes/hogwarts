@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="javascript:location.reload(true)"><h1>Sorting Hat</h1> </a>
+    </header>
+
+    <div class="content">
+        <!-- imagen -->
+        <div class="back-one">
+            <div class="hat">
+                <img src="img/hathow.jpg" alt="hat">
+            </div>
+            <!-- formulario -->
+            <div class="formulario">
+                <form id="form-group" action="" class="form-group row">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" placeholder="Nombre" id="nombre" class="form-control" maxlength="20">
+                    <label for="edad">Edad</label>
+                    <input type="number" min="11" placeholder="Edad" id="edad" class="form-control">
+                    <label for="linaje">Linaje</label>
+                    <select name="linaje" id="linaje" class="form-select">
+                        <option value= 10 >Sangre Pura</option>
+                        <option value= 1 >Mestizo</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <!-- Preguntas -->
+        <div id="questions-cards">
+            <div class="questions">
+                <p>¿Aceptarías un trabajo que sabes que perjudica al medio ambiente si eso significa proporcionar una mejor calidad de vida para tu familia?</p>
+                <button  name="yes" value="10" class="btn-select" onclick="">SI</button><button id="not" value="1" class="btn-selectNO">NO</button>
+            </div>
+            <div class="questions" >
+                <p>¿Denunciarías a un amigo cercano si supieras que ha cometido un delito grave, incluso si eso significa poner en riesgo su libertad?</p>
+                <button name="yes" value="10" class="btn-select">SI</button><button id="not" value="1" class="btn-selectNO">NO</button>
+            </div>
+            <div class="questions" >
+                <p>¿Crees que está justificado mentir para proteger a alguien de una verdad que podría causarle un gran sufrimiento?</p>
+                <button name="yes" value="1" class="btn-select">SI</button><button id="not" value="10" class="btn-selectNO">NO</button>
+            </div>
+            
+        </div>
+        <!-- Enviar todo -->
+        <div class="btn-center">
+            <button class="Send">
+                Send
+            </button>
+        </div>
+    </div>
+    
+    <div class="Answers">
+        <div>
+            <div class="Mago">
+                <h2 id="mago"></h2>
+            </div>
+            <div class="houses">
+                <div id="Gryffindor">
+                    <img src="img/gryffindor4671.jpg" alt="Gryffindor">
+                    <h3>Gryffindor</h3>
+                    <p>Coraje, valentía y determinación. Sus miembros, conocidos por su audacia, enfrentan desafíos con nobleza y actúan con lealtad hacia sus amigos y la justicia.</p>
+                </div>
+                <div id="Hufflepuff">
+                    <img src="img/hufflepuff671.jpg" alt="Hufflepuff">
+                    <h3>Hufflepuff</h3>
+                    <p> Lealtad, la paciencia, la laboriosidad y la igualdad. Naturaleza amistosa y su disposición para trabajar arduamente.</p>
+                </div>
+                <div id="Ravenclaw">
+                    <img src="img/ravenclaw-671.jpg" alt="Ravenclaw">
+                    <h3>Ravenclaw</h3>
+                    <p>Sabiduría, inteligencia, creatividad y originalidad. Sus miembros son elogiados por su perspicacia y amor por el conocimiento, buscando constantemente aprender y explorar nuevas ideas en la búsqueda del saber.</p>
+                </div>
+                <div id="Slytherin">
+                    <img src="img/slytherin-671.jpg" alt="Slytherin">
+                    <h3>Slytherin</h3>
+                    <p>Astucia, ambición, determinación y auto-preservación. Ingenio y habilidad para alcanzar sus metas, a menudo mostrando una fuerte determinación para sobresalir en sus esfuerzos.</p>
+                </div>
+            </div>
+        </div>
+        <div id="Patronus">
+            <div class="patronus-select">
+                <h2>Expecto Patronum</h2>
+                <label for="Fobia">Fobia</label>
+                <select name="fear" id="fear">
+                    <option value="1">Aracnofobia</option>
+                    <option value="2">Acrofobia</option>
+                    <option value="3">Claustrofobia</option>
+                    <option value="4">Agorafobia</option>
+                </select>
+                <label for="Aperitivo">Aperitivo</label>
+                <select name="meal" id="meal">
+                    <option value="1">Tarta de Calabaza</option>
+                    <option value="2">Fideos de Calamar</option>
+                    <option value="3">Estofado de Dragón</option>
+                    <option value="4">Ensalada de Mandrágora</option>
+                </select>
+                <button class="btn-patronus">
+                    Expecto Patronum
+                </button>
+            </div>
+
+            <div class="animals">
+                <div>
+                    <div id="Ciervo">
+                        <img src="img/ciervo2.jpg" alt="Ciervo">
+                        <h3>Ciervo</h3>
+                        <p>Esperanza, valentía y la capacidad de superar la oscuridad con la luz del amor.</p>
+                    </div>
+                    <div id="Wolf">
+                        <img src="img/lobo2.jpg" alt="Wolf">
+                        <h3>Wolf</h3>
+                        <p>La lealtad y la valentía, la capacidad de enfrentarse y superar el miedo.</p>
+                    </div>
+                    <div id="Lion">
+                        <img src="img/leon3.jpg" alt="Lion">
+                        <h3>Lion</h3>
+                        <p>El coraje, la valentía y la capacidad de liderazgo, siendo un reflejo de la fuerza interior del mago que lo conjura.</p>
+                    </div>
+                    <div id="Phoenix">
+                        <h2>Patronus</h2>
+                        <img src="img/fenix2.jpg" alt="Phoenix">
+                        <p>Recordatorio de la naturaleza cíclica de la vida y la esperanza eterna que perdura a pesar de los desafíos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+         Riwi 2023
+    </footer>
+
+</body>
+<script src="/js/main.js"></script>
+</html>
